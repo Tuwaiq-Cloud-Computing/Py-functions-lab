@@ -37,12 +37,17 @@ print("the lagest number is: ",laggestNum)
 def listFunc():
 
     newlist=[]
-    lastIndex = int(input("Enter List Index: "))
+    lastIndex = int(input("Enter Last Index: "))
     i = 0
 
     for i in range(i, lastIndex+1):
         newlist.append(i)
     print("My new list: ", newlist)
+
+    cut = int(input("Enter cut list: "))
+
+    print(newlist[0:cut+1])
+
 
 listFunc()
 
